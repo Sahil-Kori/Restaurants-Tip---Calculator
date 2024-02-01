@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tip Calculator </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Signika+Negative&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+</head>
+
+<body>
+
+    <!-- <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+    </div> -->
+
+    <div class="container">
+        <div class="innerBox">
+            <header>
+                <h2 class="heading"> Tip - Calculator </h2>
+            </header>
+            <div class="inputs">
+                <label for="total-amount" class="label"> Enter Total Amount</label><br>
+                <div class="new">
+                    <span class="icon"><i class="fa-solid fa-indian-rupee-sign"></i></span>
+                    <input type="number" name="total-amount" id="total-amount"><br>
+                </div>
+            </div>
+            <div class="inputs">
+                <label for="number-of-person" class="label"> Number of Person </label><br>
+                <div class="new">
+                    <span class="icon"><i class="fa-solid fa-person"></i></span>
+                    <input type="number" name="number-of-person" id="number-of-person"><br>
+                </div>
+            </div>
+            <label for="service-quality"> Service Quality : </label>
+            <select name="service-quality" class="select">
+                <option value="" class="option">Choose...</option>
+                <option value="10" class="option"> 10% up to</option>
+                <option value="15" class="option"> 15% up to</option>
+                <option value="20" class="option"> 20% up to</option>
+                <option value="30" class="option"> 30% up to</option>
+            </select>
+
+            <br>
+
+            <button id="calculate"> Calculate </button>
+        </div>
+
+    </div>
+
+    <script src="logic.js"></script>
+
+</body>
+
+</html>
